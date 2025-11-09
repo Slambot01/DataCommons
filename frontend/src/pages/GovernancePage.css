@@ -1,0 +1,440 @@
+.deposit-page,
+.datasets-page,
+.apply-page,
+.governance-page,
+.analytics-page,
+.curator-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(10, 10, 15, 0.98) 100%
+  );
+}
+
+/* Ensure all text is visible on dark background */
+.governance-page,
+.analytics-page,
+.curator-page {
+  color: #e5e5e5;
+}
+
+/* All headings should be white */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+/* Ensure labels are visible */
+label,
+.form-label,
+.stat-label,
+.metric-label {
+  color: #a0a0a0 !important;
+}
+
+.governance-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.governance-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.proposals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proposal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.proposal-info {
+  flex: 1;
+}
+
+.proposal-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.proposal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.proposal-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.proposal-badge.voting {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.proposal-badge.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.proposal-applicant {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.proposal-deadline {
+  text-align: right;
+}
+
+.deadline-label {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.deadline-value {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.proposal-votes {
+  margin-bottom: 16px;
+}
+
+.votes-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.votes-for {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.votes-against {
+  color: #a0a0a0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.proposal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proposal-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.score-icon {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+}
+
+.score-text {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.meta-separator {
+  color: #666666;
+}
+
+.amount-label {
+  color: #a0a0a0;
+}
+
+.amount-value {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.proposal-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  object-fit: contain;
+}
+
+.modal-meta {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal-applicant {
+  color: #a0a0a0;
+}
+
+.modal-details-box {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+}
+
+.modal-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  font-size: 14px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-label {
+  color: #a0a0a0;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.voting-results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vote-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vote-bar-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.vote-label.for {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.vote-label.against {
+  color: #a0a0a0;
+  font-weight: 500;
+}
+
+.vote-percentage {
+  color: #a0a0a0;
+}
+
+.vote-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vote-progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.vote-progress-fill.for {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.vote-progress-fill.against {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.score-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.score-label {
+  font-size: 14px;
+  color: #a0a0a0;
+  min-width: 150px;
+}
+
+.score-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.score-bar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-bar-fill {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.score-number {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 30px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.modal-voting {
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.voting-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.vote-button {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.vote-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vote-button-abstain {
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #a0a0a0;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.vote-button-abstain:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.voting-power-text {
+  text-align: center;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+@media (max-width: 768px) {
+  .proposal-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .proposal-deadline {
+    text-align: left;
+  }
+
+  .proposal-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .voting-buttons {
+    flex-direction: column;
+  }
+}
