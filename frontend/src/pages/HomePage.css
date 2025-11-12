@@ -499,9 +499,10 @@
 /* Value Propositions Grid */
 .value-props-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin: 48px 0;
+  margin: 48px auto;
+  max-width: 1000px;
 }
 
 .value-prop-card {
@@ -551,7 +552,8 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 48px 32px;
-  margin: 48px 0;
+  margin: 48px auto;
+  max-width: 900px;
   backdrop-filter: blur(10px);
 }
 
@@ -631,7 +633,11 @@
 
   .value-props-grid {
     grid-template-columns: 1fr;
+    margin-left: 0;
   }
+
+  .value-prop-card {
+    text-align: center;
 
   .stats-highlight-content {
     flex-direction: column;
